@@ -42,7 +42,7 @@ public class TopologicalSort {
         }
         // If result dosn't contain all the nodes then there is a 
         // cycle in this case return null.
-        if (result.length == N) return result;
+        if (index == N) return result;
         else return null;
         
     }
