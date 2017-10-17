@@ -6,6 +6,16 @@ import java.util.Queue;
 
 public class TopologicalSort {
 	
+    /*
+    * finds the topological sort of a graph.
+    *
+    * @param graph 
+    *       the adjacency  list of the graph.
+    * @param N
+    *       the number of vertices in the graph.    
+    * @return array of the sorted vertices. null if the graph can't
+    *       be sorted as it contains a cycle.  
+    */     
 	 public int[] topoSort(ArrayList<Integer> graph[],int N)
      {
 		// Queue that holds the nodes to process.
@@ -43,7 +53,6 @@ public class TopologicalSort {
         // If result dosn't contain all the nodes then there is a 
         // cycle in this case return null.
         if (index == N) return result;
-        else return null;
-        
+        else return null; 
     }
 }
